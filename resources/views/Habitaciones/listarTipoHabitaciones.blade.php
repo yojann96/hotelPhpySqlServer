@@ -41,7 +41,7 @@
     $("#IdTipoHabitacion").on("change", function(){
         $("#NroHabitaciones, #btnguardarHabitacion").hide();
         var IdTipoHabitacion = $("#IdTipoHabitacion option:selected").val();
-        $("#NroHabitacionesCrear").val("0");
+        $("#NroHabitacionesCrear").val("1");
         if( IdTipoHabitacion == '' ){
             $("#RtaListaTipoAcomodasion").empty();
         }else{
@@ -67,7 +67,7 @@
             }else{
                 $("#btnguardarHabitacion").hide();
                 alert("Excede el nro de unidades disponibles. Sólo restan "+saldoHabitaciones+" unidad(es) por usar");
-                $("#NroHabitacionesCrear").val("1");
+                $("#NroHabitacionesCrear").val("0");
             }        
         } else {
             $("#btnguardarHabitacion").hide();
