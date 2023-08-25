@@ -67,7 +67,7 @@
             }else{
                 $("#btnguardarHabitacion").hide();
                 alert("Excede el nro de unidades disponibles. Sólo restan "+saldoHabitaciones+" unidad(es) por usar");
-                $("#NroHabitacionesCrear").val("0");
+                $("#NroHabitacionesCrear").val("1");
             }        
         } else {
             $("#btnguardarHabitacion").hide();
